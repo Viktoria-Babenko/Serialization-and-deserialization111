@@ -37,15 +37,5 @@ namespace Serialization_and_deserialization
             Console.WriteLine("Введите номер группы студента:");
             Number_Of_Group = int.Parse(Console.ReadLine());
         }
-        public class SortByAge : IComparer
-        {
-            int IComparer.Compare(object obj1, object obj2)
-            {
-                if (obj1 is Student && obj2 is Student)
-                    return (obj1 as Student).Age.CompareTo((obj2 as Student).Age);
-
-                throw new NotImplementedException();
-            }
-        }
     }
 }
