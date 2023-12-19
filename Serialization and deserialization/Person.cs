@@ -34,6 +34,20 @@ namespace Serialization_and_deserialization
             Phone = phone;
         }
 
-        
+        public void Print()
+        {
+            Console.Write($"{Name}\t\t{Surname}\t\t{Age}\t\t{Phone}");
+        }
+        public void Add()
+        {
+            Console.WriteLine("Введите Имя студента:");
+            Name = Console.ReadLine();
+            Console.WriteLine("Введите Фамилию студента:");
+            Surname = Console.ReadLine();
+            Console.WriteLine("Введите возраст студента:");
+            Age = int.Parse(Console.ReadLine());
+            Console.WriteLine("Введите телефон студента:");
+            Phone = Console.ReadLine();
+        }
     }
 }
