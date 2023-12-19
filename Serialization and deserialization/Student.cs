@@ -1,14 +1,16 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Runtime.Serialization;
 
 namespace Serialization_and_deserialization
 {
     [Serializable]
     [DataContract]
-    public class Student : Person
+    public class Student : Person, IComparable
     {
         [DataMember]
         public double Average { get; set; }
@@ -36,6 +38,13 @@ namespace Serialization_and_deserialization
             Average = int.Parse(Console.ReadLine());
             Console.WriteLine("Введите номер группы студента:");
             Number_Of_Group = int.Parse(Console.ReadLine());
+        }
+        public int CompareTo(object obj)
+        {
+            if (obj is Student)
+                return this.Surname.CompareTo((obj as Student).Surname);
+
+            throw new NotImplementedException();
         }
     }
 }
