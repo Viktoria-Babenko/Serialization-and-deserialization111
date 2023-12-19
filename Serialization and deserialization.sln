@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serialization and deserialization", "Serialization and deserialization\Serialization and deserialization.csproj", "{5518FDCB-DF7C-4A83-9132-E23C48CF1B3A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5518FDCB-DF7C-4A83-9132-E23C48CF1B3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5518FDCB-DF7C-4A83-9132-E23C48CF1B3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5518FDCB-DF7C-4A83-9132-E23C48CF1B3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5518FDCB-DF7C-4A83-9132-E23C48CF1B3A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DC2E8CDB-09D3-4CB7-8CCE-905FAE3B03B4}
+	EndGlobalSection
+EndGlobal
